@@ -1,0 +1,37 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" 光標會始終保持距離上下邊界至少 5 行的距離，讓你能更好地看到光標周圍的內容。"
+set scrolloff=7
+
+" 搜尋時會高亮並跳到第一個匹配單字
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" 複製貼上同步
+set clipboard=unnamedplus
+
+" visual 下圈選範圍ctrl + j or k 進行上下移動
+:vnoremap <C-k> :m '>+1<CR>gv=gv
+:vnoremap <C-j> :m '<-2<CR>gv=gv
+
+" gi idea 查看implementation
+nmap gi :action GoToImplementation<CR>
+
+" ctrl + o 上一步 相反 ctrl + i 下一步
+
+" ctrl + a 查看git歷史紀錄
+nmap <C-a> :action Annotate<CR>
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
