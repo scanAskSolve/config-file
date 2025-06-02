@@ -42,4 +42,4 @@ Plug 'tpope/vim-commentary'
 " "hello [world]" insert ds]" -> hello world
 " cursor is ^
 
-Plug 'tpope/vim-surround
+Plug 'tpope/vim-surround'
