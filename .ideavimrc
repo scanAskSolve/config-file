@@ -34,4 +34,12 @@ Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
 
+" Surround plugin
+" "hello world" insert cs"> 'hello world'
+" hello world" insert ds" -> hello world
+" "hello world" insert ysiw] iw is a text object -> "hello [world]"
+" "hello [world]" insert cs]] -> "hello (world)"
+" "hello [world]" insert ds]" -> hello world
+" cursor is ^
 
+Plug 'tpope/vim-surround
